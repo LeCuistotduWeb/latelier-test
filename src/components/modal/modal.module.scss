@@ -1,0 +1,191 @@
+.modal {
+    background-color: rgba(#000000, .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    overflow: auto;
+}
+
+.closeIcon {
+    background: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 2rem auto;
+}
+
+.modalContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalContent {
+    background-color: #fff;
+    max-width: 100%;
+    margin: auto;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.modalPicture {
+    img {
+        display: block;
+    }
+}
+
+.modalFlag {
+    width: 50px;
+    font-family: var(--font-montserrat);
+    font-weight: 300;
+
+    img {
+        box-shadow: 0 0 10px 1px #0000002e;
+        display: block;
+    }
+}
+
+.modalTitle {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 0 var(--color-orange), -2px 0 var(--color-orange), 0 2px var(--color-orange), 0 -2px var(--color-orange),
+        1px 1px var(--color-orange), -1px -1px var(--color-orange), 1px -1px var(--color-orange), -1px 1px var(--color-orange);
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    font-family: var(--font-montserra);
+    margin-top: 1rem;
+}
+
+.modalSubTitle {
+    font-size: 3.5rem;
+    color: var(--color-orange);
+    font-weight: 900;
+    -webkit-text-fill-color: var(--color-orange);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--color-orange);
+    letter-spacing: 3px;
+    font-family: var(--font-montserra);
+}
+
+.carreer {
+    color: var(--color-orange);
+}
+
+.carreerTitle {
+    text-transform: uppercase;
+    color: var(--color-black);
+    font-family: var(--font-mulish);
+}
+
+@media screen and (max-width: 767px) {
+    .modalPicture {
+        padding-top: 2rem;
+        margin-bottom: 3rem;
+
+        img {
+            max-height: 200px;
+            margin: auto;
+        }
+    }
+
+    .modalInfos {
+        margin-top: 2rem;
+    }
+
+    .carreer {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modalPicture {
+        max-width: 200px;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .modalContent {
+        max-width: 80%;
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        padding: 3rem 3rem 3rem 150px;
+    }
+
+    .modalPicture {
+        position: fixed;
+        left: 0;
+        transform: translateX(-50px);
+        bottom: 0;
+        margin-bottom: 0;
+
+        img {
+            object-position: bottom;
+            object-fit: contain;
+            max-width: 450px;
+        }
+    }
+
+    .modalHeader {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 3rem;
+    }
+
+    .modalCountry {
+        font-size: 3rem;
+        color: var(--color-black);
+        font-weight: normal;
+    }
+
+    .modalTitle {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .modalSubTitle {
+        font-size: 8rem;
+        line-height: 9rem;
+    }
+
+    .modalFlag {
+        width: 150px;
+    }
+
+    .modalInfos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 5rem;
+    }
+
+    .carreer {
+        max-width: 250px;
+    }
+
+    .closeIcon svg polygon {
+        fill: white;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .statsContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 3rem 3rem;
+        gap: 3rem;
+        margin-left: 100px;
+    }
+}

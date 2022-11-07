@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600;700&display=swap");
+
+:root {
+  --color-orange: #F2753B;
+  --color-orange-light: #EBAD65;
+  --color-black: rgba(0,0,0,.3);
+
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-mulish: 'Mulish', sans-serif;
+}
+
+*,*:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mulish);
+  font-weight: 600;
+}
+
+#root {
+  background: linear-gradient(var(--color-orange), var(--color-orange-light));
+  background-image: url('../public/background.jpg');
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

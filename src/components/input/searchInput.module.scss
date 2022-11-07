@@ -1,0 +1,26 @@
+input {
+    background-color: var(--color-black);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    border: none;
+    width: 100%;
+    outline: none;
+    transition: all .3s;
+    border: none;
+    color: var(--color-orange-light);
+    font-weight: 600;
+    letter-spacing: 1px;
+    max-width: 600px;
+
+    &:focus {
+        background-color: #fff;
+        color: var(--color-orange);
+    }
+
+    &::placeholder {
+        color: var(--color-orange-light);
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}
