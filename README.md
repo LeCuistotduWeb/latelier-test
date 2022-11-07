@@ -18,7 +18,7 @@ npm install && npm start
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-You can see the demo online at [gaetan-boyron-latelier-test-technique.vercel.app](gaetan-boyron-latelier-test-technique.vercel.app);
+You can see the demo online at [https://latelier-test-technique.vercel.app/](https://latelier-test-technique.vercel.app/);
 
 ---
 
