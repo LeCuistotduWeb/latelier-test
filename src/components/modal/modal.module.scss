@@ -15,6 +15,10 @@
     height: 50px;
     cursor: pointer;
     margin: 2rem auto;
+
+    & polygon {
+        fill: white;
+    }
 }
 
 .modalContainer {
@@ -171,10 +175,6 @@
 
     .carreer {
         max-width: 250px;
-    }
-
-    .closeIcon svg polygon {
-        fill: white;
     }
 
     .container {
